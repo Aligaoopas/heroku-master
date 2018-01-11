@@ -9,7 +9,7 @@
           document.querySelector('#message').innerHTML = 'wait...';
 
         fetch('uploadZip.php', { method: 'POST', body: new FormData(document.querySelector('#the_form')) })
-            .then(r => r.headers.get('content-type').includes('json') ? r.json() : r.text()).
+            .then(r =>  r.text()).
         then(r => {
           console.log(r);
           let html = '';
