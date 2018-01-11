@@ -1,1 +1,1 @@
-<?php phpinfo();
+<?php include 'index.htm';
